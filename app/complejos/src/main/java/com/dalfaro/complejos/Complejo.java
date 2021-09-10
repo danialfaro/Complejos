@@ -13,7 +13,7 @@ class Complejo {
 
     //declaración de métodos
     /** Transcribe el complejo a String.
-     * @returnun string con la parte entera y la imaginaria
+     * @return string con la parte entera y la imaginaria
      */
 
     public String toString() {
@@ -27,5 +27,10 @@ class Complejo {
     public void suma(Complejo v) {
         real = real + v.real;
         imaginario = imaginario + v.imaginario;
+    }
+
+    public void resta(Complejo v) {
+        real = real - v.real;
+        imaginario = imaginario - v.imaginario;
     }
 }
