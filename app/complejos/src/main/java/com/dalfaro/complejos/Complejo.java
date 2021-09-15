@@ -7,8 +7,16 @@ class Complejo {
 
     //declaración de constructor
     public Complejo(double real, double imaginario) {
-        this.real= real;
+        this.real = real;
         this.imaginario= imaginario;
+    }
+
+    public double getReal() {
+        return real;
+    }
+
+    public double getImaginario() {
+        return imaginario;
     }
 
     //declaración de métodos
@@ -27,6 +35,15 @@ class Complejo {
     public void suma(Complejo v) {
         real = real + v.real;
         imaginario = imaginario + v.imaginario;
+    }
+
+    public void suma(double re, double im) {
+        real = real + re;
+        imaginario = imaginario + im;
+    }
+
+    public void suma(double re) {
+        real = real + re;
     }
 
     public void resta(Complejo v) {
